@@ -10,7 +10,12 @@ This Repository is a guide to all the git commands you need to use in case any o
 
  Replace  url with your required repository url  
 ```
-
+- Set username and emailId
+```sh
+   git config --global user.name "FIRST_NAME LAST_NAME"
+   
+   git config --global user.email "MY_NAME@example.com"
+```
 - Pushing to a Repository
 ```sh
   git add .
