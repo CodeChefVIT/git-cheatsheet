@@ -80,5 +80,33 @@ git remote set-url origin <new git url>
 
 ```
 
-## Update forked Repository with original Repository
+## Update forked Repository with original Repository  :hourglass:	
+
+  These steps are to be followed when your forked repository is few commits behind original repository
+
+```sh
+
+  - Add original repository url here 
+
+    git remote add upstream https://github.com/whoever/whatever.git
+
+  - Fetch all branches of the repository
+
+    git fetch upstream
+
+  - Make sure you are on master branch
+
+    git checkout master
+
+  -  Rewrite your master branch so that any commits of yours that aren not already in upstream/master are replayed on top of that other branch
+
+    git rebase upstream/master
+
+    This should update your forked repository with original repository
+
+    However if you do not want to rewrite history of master branch then replace last command with this
+
+    git merge upstream/master
+
+```
   
