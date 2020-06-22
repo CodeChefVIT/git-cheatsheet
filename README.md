@@ -112,6 +112,38 @@ git remote set-url origin <new git url>
     However if you do not want to rewrite history of master branch then replace last command with this
 
     git merge upstream/master
+    
+ 
+
+```
+
+## Your dev branch is X commits behind and Y commits ahead of master fix 
+
+```sh
+  git checkout master
+
+  git fetch origin master
+ 
+  git checkout dev
+
+  git rebase origin/master
+
+  git checkout master
+
+  git merge --no-ff dev
+  
+  If you get this message  'Automatic merge failed; fix conflicts and then commit the result'
+  
+  Check for merge conflicts in code and fix them (master branch should have required files now)
+  
+  For any such message deleted in  'dev and modified in HEAD. Version HEAD of requirements.txt left in tree' 
+  
+  File can either be deleted or modified or kept same
+  
+  git pull origin master (if warning comes)
+  
+  add , commit , push 
+
 
 ```
   
