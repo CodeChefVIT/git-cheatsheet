@@ -6,7 +6,11 @@ This Repository is a guide to all the git commands you need to use in case any o
 
 - Clone a Repository
 ```sh
- git clone https://github.com/CodeChefVIT/git-cheatsheet.git
+git init
+
+ Turn an existing directory into a git repository
+
+git clone https://github.com/CodeChefVIT/git-cheatsheet.git
 
  Replace  url with your required repository url  
 ```
@@ -18,11 +22,22 @@ This Repository is a guide to all the git commands you need to use in case any o
 ```
 - Pushing to a Repository
 ```sh
+  git status
+    show modified files in working directory, staged for your next commit
+  
   git add .
   git commit -m <commit message>
   git push origin master
-
-  To add just one file or a set of files replace the . with your filename in first command
+   
+   To add just one file or a set of files replace the . with your filename in first command
+  
+  git diff
+    diff of what is changed but not staged
+  git diff --staged
+    diff of what is staged but not yet commited
+  git commit -m “[descriptive message]”
+    commit your staged content as a new commit snapshot
+  
 ```
 
 - Check where is your Repository remote 
