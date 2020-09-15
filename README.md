@@ -70,6 +70,46 @@ git remote set-url origin <new git url>
     <Commit Message>
 ```
 
+- Tracking changes 
+
+```sh
+  git diff
+    To track the changes that are yet to staged.
+
+    git diff --staged
+      To track the changes that are staged but not committed.
+    
+    git diff HEAD
+      To track the changes after committing a file.
+        
+    git status
+      To know the state of the files in local directory.
+    
+    git show
+     To show all the changes made in the file for each commit
+     
+```
+
+ - Ignoring files
+
+```sh 
+
+    Git can ignore specified files from adding into the remote repository using     gitignore. 
+    
+    Create .gitignore in the project
+    
+     vim .gitignore 
+
+```
+Add the filename/directory you want to ignore by the git in the gitignore file
+    
+    node_modules  
+
+now, when you add the files it ignores node_modules directory in your project.
+
+
+
+
 ## Branches :deciduous_tree:	
 
 - Create new branch
@@ -161,4 +201,27 @@ git remote set-url origin <new git url>
 
 
 ```
-  
+## Short hands 
+
+```sh
+    git commit -am <message> 
+      adds and commits the changes in a single command
+
+```
+
+```sh
+    git push -u origin <branch name>
+      use -u (upstream) for pushing your first commit changes into the remote repository
+      and later on you avoid origin <branch name>
+
+   git push 
+      works fine till the last commit    
+
+```
+
+```sh
+    git diff > difference.txt
+      If you are feeling hard to track all the changes on console 
+      above helps to writes/pipes the differences into specified file (difference.txt) and you can track the changes
+      easily
+```
