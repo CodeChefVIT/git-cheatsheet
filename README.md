@@ -225,3 +225,29 @@ now, when you add the files it ignores node_modules directory in your project.
       above helps to writes/pipes the differences into specified file (difference.txt) and you can track the changes
       easily
 ```
+## GitHub CLI commands:
+```sh
+1. gh issue list
+View and filter a repository’s open issues.
+
+2. gh pr status
+Check on the status of your pull requests.
+
+3.  gh pr checkout
+Check out pull requests locally.
+
+4. gh pr create
+Create a new pull request.
+
+5. gh pr checks
+View your pull requests’ checks.
+
+6. gh release create
+Create a new release.
+
+7.  gh repo view
+View repository READMEs.
+
+8. gh alias set
+Create a shortcut for a gh command.
+```
