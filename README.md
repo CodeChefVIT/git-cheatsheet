@@ -40,6 +40,11 @@ git clone https://github.com/CodeChefVIT/git-cheatsheet.git
   
 ```
 
+- Change most recent Git commit message
+```sh
+git commit --amend
+```
+
 - Check where is your Repository remote 
 ```sh
   git remote -v
