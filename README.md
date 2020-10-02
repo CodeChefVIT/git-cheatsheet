@@ -230,32 +230,7 @@ now, when you add the files it ignores node_modules directory in your project.
       above helps to writes/pipes the differences into specified file (difference.txt) and you can track the changes
       easily
 ```
-## GitHub CLI commands:
-```sh
-1. gh issue list
-View and filter a repository’s open issues.
 
-2. gh pr status
-Check on the status of your pull requests.
-
-3.  gh pr checkout
-Check out pull requests locally.
-
-4. gh pr create
-Create a new pull request.
-
-5. gh pr checks
-View your pull requests’ checks.
-
-6. gh release create
-Create a new release.
-
-7.  gh repo view
-View repository READMEs.
-
-8. gh alias set
-Create a shortcut for a gh command.
-```
 ## GitHub  CLI commands:
 ```sh
 List Issues With GitHub CLI
@@ -305,6 +280,21 @@ After checking in on these PRs, we still can’t find the pull request we’re l
 
 14. gh pr view "14"
 Once we’ve found a PR we want to review, we might want to assign that PR to ourself.  Currently, we can’t do that directly from the command line, but we can quickly open the PR from the command line using the view command.
+
+15. gh pr checkout
+Check out pull requests locally.
+
+16. gh pr create
+Create a new pull request.
+
+17. gh pr checks
+View your pull requests’ checks.
+
+18. gh release create
+Create a new release
+
+19. gh alias set
+Create a shortcut for a gh command.
 ```
 
 
