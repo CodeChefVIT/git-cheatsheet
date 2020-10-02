@@ -256,3 +256,56 @@ View repository READMEs.
 8. gh alias set
 Create a shortcut for a gh command.
 ```
+## GitHub  CLI commands:
+```sh
+List Issues With GitHub CLI
+1. gh issue list
+list out the open GitHub Issues for our project
+
+2. gh issue list --state "all"
+  gh issue list -s "all"
+If we want to list out ALL of the issues we could use the “state” flag
+
+3. gh issue list --assignee "n8ebel"
+Now, maybe we’ve realized that is too many issues to sort through, so we decide we only want to list out your currently assigned issues.
+
+4. gh issue status
+Next, we want to check in on the status of a couple of the issues we created yesterday.  Maybe we don’t remember their exact numbers, but since we created them, we can use the status command to list them at the terminal
+
+5. gh issue list --state "closed"
+   gh issue list -s "closed"
+After checking in on these issues, we still can’t find the issue we’re looking for, so we might want to check whether it was closed or not.
+
+6. gh issue list --label "bug"
+   gh issue list -l "bug"
+To list out all of our open bugs, we could filter by the “bug” label defined in our GitHub repo
+
+7. gh issue view "15"
+Once we’ve found an issue we want to fix, we might want to assign that issue to ourselves.  Currently, we can’t do that directly from the command line, but we can quickly open the issue from the command line using the “view” command.
+
+8. gh issue create
+We can use the gh issue create command to create a new GitHub Issue directly from the command line.
+
+9.  gh issue create -t "Sample Issue Title" -b "Sample issue description"
+If you’d like to simplify things a bit, you can specify the issue with the command using additional flags
+
+10. gh pr list
+list the open pull requests for our project.
+
+11. gh pr list --state "all"
+    gh pr list -s "all"
+If we want to list out ALL of the pull requests, both open and closed, we could use the “state” flag
+
+12. gh pr status
+Next, we want to check in on the status of a couple of the PRs we created yesterday.  Maybe we don’t remember their exact numbers, but since we created them, we can use the status command to list them at the terminal
+
+13. gh pr list --state "closed"
+    gh pr list -s "closed"
+After checking in on these PRs, we still can’t find the pull request we’re looking for, so we might want to check whether it was closed or not.
+
+14. gh pr view "14"
+Once we’ve found a PR we want to review, we might want to assign that PR to ourself.  Currently, we can’t do that directly from the command line, but we can quickly open the PR from the command line using the view command.
+```
+
+
+
