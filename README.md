@@ -2,6 +2,16 @@
 
 This Repository is a guide to all the git commands you need to use in case any of these situations arise
 
+## Index :books:
+* [Basic Commands :v:](#basic-commands-v)
+* [Branches :deciduous_tree:](#branches-deciduous_tree)
+* [Update forked Repository with original Repository :hourglass:](#update-forked-repository-with-original-repository--hourglass)
+* [Dev branch is X commits behind and Y commits ahead of master](#master)
+* [Short hands](#shorthands)
+* [GitHub CLI commands](#cli)
+
+
+
 ## Basic Commands :v:
 
 - Clone a Repository
@@ -113,7 +123,7 @@ Add the filename/directory you want to ignore by the git in the gitignore file
 now, when you add the files it ignores node_modules directory in your project.
 
 
-
+<a name="branches"/>
 
 ## Branches :deciduous_tree:	
 
