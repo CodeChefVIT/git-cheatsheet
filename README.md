@@ -6,9 +6,6 @@ This Repository is a guide to all the git commands you need to use in case any o
 * [Basic Commands :v:](#basic-commands-v)
 * [Branches :deciduous_tree:](#branches-deciduous_tree)
 * [Update forked Repository with original Repository :hourglass:](#update-forked-repository-with-original-repository--hourglass)
-* [Dev branch is X commits behind and Y commits ahead of master](#master)
-* [Short hands](#shorthands)
-* [GitHub CLI commands](#cli)
 
 
 
@@ -125,6 +122,10 @@ now, when you add the files it ignores node_modules directory in your project.
 
 <a name="branches"/>
 
+
+**[⬆ Back to Index](#index-books)**
+
+
 ## Branches :deciduous_tree:	
 
 - Create new branch
@@ -154,6 +155,9 @@ now, when you add the files it ignores node_modules directory in your project.
     git push origin <branch name>
 
 ```
+
+**[⬆ Back to Index](#index-books)**
+
 
 ## Update forked Repository with original Repository  :hourglass:	
 
@@ -307,5 +311,5 @@ Create a new release
 Create a shortcut for a gh command.
 ```
 
-
+**[⬆ Back to Index](#index-books)**
 
