@@ -2,6 +2,16 @@
 
 This Repository is a guide to all the git commands you need to use in case any of these situations arise
 
+## Index :books:
+* [Basic Commands :v:](#basic-commands-v)
+* [Branches :deciduous_tree:](#branches-deciduous_tree)
+* [Update forked Repository with original Repository :hourglass:](#update-forked-repository-with-original-repository--hourglass)
+* [Dev branch is X commits behind and Y commits ahead of master](#your-dev-branch-is-x-commits-behind-and-y-commits-ahead-of-master-fix)
+* [Short hands](#short-hands)
+* [GitHub CLI commands](#github--cli-commands)
+
+
+
 ## Basic Commands :v:
 
 - Clone a Repository
@@ -113,6 +123,10 @@ Add the filename/directory you want to ignore by the git in the gitignore file
 now, when you add the files it ignores node_modules directory in your project.
 
 
+<a name="branches"/>
+
+
+**[⬆ Back to Index](#index-books)**
 
 
 ## Branches :deciduous_tree:	
@@ -144,6 +158,9 @@ now, when you add the files it ignores node_modules directory in your project.
     git push origin <branch name>
 
 ```
+
+**[⬆ Back to Index](#index-books)**
+
 
 ## Update forked Repository with original Repository  :hourglass:	
 
@@ -177,6 +194,8 @@ now, when you add the files it ignores node_modules directory in your project.
 
 ```
 
+**[⬆ Back to Index](#index-books)**
+
 ## Your dev branch is X commits behind and Y commits ahead of master fix 
 
 ```sh
@@ -206,6 +225,9 @@ now, when you add the files it ignores node_modules directory in your project.
 
 
 ```
+
+**[⬆ Back to Index](#index-books)**
+
 ## Short hands 
 
 ```sh
@@ -230,6 +252,9 @@ now, when you add the files it ignores node_modules directory in your project.
       above helps to writes/pipes the differences into specified file (difference.txt) and you can track the changes
       easily
 ```
+
+**[⬆ Back to Index](#index-books)**
+
 
 ## GitHub  CLI commands:
 ```sh
@@ -297,5 +322,5 @@ Create a new release
 Create a shortcut for a gh command.
 ```
 
-
+**[⬆ Back to Index](#index-books)**
 
