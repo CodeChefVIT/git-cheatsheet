@@ -180,21 +180,24 @@ now, when you add the files it ignores node_modules directory in your project.
   ```
   git fetch upstream
   ```
-  Any new changes and branches from the original forked repository should now be fetched to your local repository. You can now choose to either rebase your local branch, or merge the changes from the forked repository into your branch.
-
-  If you are unsure about which option to pick, you can read more about [the differences between rebasing and merging in this article](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
-
+  Any new changes and branches from the original forked repository should now be fetched to your local repository.
+  
   4. Rebase your local branch, or merge the changes
+  
+  You can now choose to either rebase your local branch, or merge the changes from the forked repository into your branch. If you are unsure about which option to pick, you can read more about [the differences between rebasing and merging in this article](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
-  **Rebase**
+
+  Use the following if you want to rebase your branch:
   ```
   git rebase upstream/master
   ```
 
-  **Merge**
+  Or use the merge command if you want to merge instead:
   ```
   git merge upstream/master
   ```
+  
+  Replace "master" with the name of the branch on the forked repository that you want to rebase or merge with.
 
 **[⬆ Back to Index](#index-books)**
 
