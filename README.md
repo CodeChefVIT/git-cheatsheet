@@ -166,33 +166,38 @@ now, when you add the files it ignores node_modules directory in your project.
 
   These steps are to be followed when your forked repository is few commits behind original repository
 
-```sh
+  1. Check if you have the forked repository added to your remotes.
+  ```
+  git remote -v
+  ```
+  If you see the forked repository listed in your remotes you can skip to point 3.
 
-  - Add original repository url here 
+  2. Add the forked repository as a remote
+  ```
+  git remote add upstream https://github.com/whoever/whatever.git
+  ```
+  3. Fetch changes from forked repository
+  ```
+  git fetch upstream
+  ```
+  Any new changes and branches from the original forked repository should now be fetched to your local repository.
+  
+  4. Rebase your local branch, or merge the changes
+  
+  You can now choose to either rebase your local branch, or merge the changes from the forked repository into your branch. If you are unsure about which option to pick, you can read more about [the differences between rebasing and merging in this article](https://www.atlassian.com/git/tutorials/merging-vs-rebasing).
 
-    git remote add upstream https://github.com/whoever/whatever.git
 
-  - Fetch all branches of the repository
+  Use the following if you want to rebase your branch:
+  ```
+  git rebase upstream/master
+  ```
 
-    git fetch upstream
-
-  - Make sure you are on master branch
-
-    git checkout master
-
-  -  Rewrite your master branch so that any commits of yours that aren not already in upstream/master are replayed on top of that other branch
-
-    git rebase upstream/master
-
-    This should update your forked repository with original repository
-
-    However if you do not want to rewrite history of master branch then replace last command with this
-
-    git merge upstream/master
-    
- 
-
-```
+  Or use the merge command if you want to merge instead:
+  ```
+  git merge upstream/master
+  ```
+  
+  Replace "master" with the name of the branch on the forked repository that you want to rebase or merge with.
 
 **[⬆ Back to Index](#index-books)**
 
