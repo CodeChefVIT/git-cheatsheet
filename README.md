@@ -9,7 +9,7 @@ This Repository is a guide to all the git commands you need to use in case any o
 * [Dev branch is X commits behind and Y commits ahead of master](#your-dev-branch-is-x-commits-behind-and-y-commits-ahead-of-master-fix)
 * [Short hands](#short-hands)
 * [GitHub CLI commands](#github--cli-commands)
-
+* [Reverting Commits :sunglasses:](#reverting-commits-sunglasses)
 
 
 ## Basic Commands :v:
@@ -233,6 +233,16 @@ now, when you add the files it ignores node_modules directory in your project.
 
 **[⬆ Back to Index](#index-books)**
 
+## Reverting Commits :sunglasses:
+ These steps are to be followed when you want to revert some unnecessary commits from a specific commit to the latest commit.
+```sh
+     git reset --hard <commit-hash>
+      sets the HEAD of the current branch point to that specific commit.
+     git push -f
+      force pushes the changes to the current branch.
+```
+**[⬆ Back to Index](#index-books)**
+
 ## Short hands 
 
 ```sh
@@ -328,4 +338,3 @@ Create a shortcut for a gh command.
 ```
 
 **[⬆ Back to Index](#index-books)**
-
