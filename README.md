@@ -7,9 +7,10 @@ This Repository is a guide to all the git commands you need to use in case any o
 * [Branches :deciduous_tree:](#branches-deciduous_tree)
 * [Update forked Repository with original Repository :hourglass:](#update-forked-repository-with-original-repository--hourglass)
 * [Dev branch is X commits behind and Y commits ahead of master](#your-dev-branch-is-x-commits-behind-and-y-commits-ahead-of-master-fix)
+* [Reverting Commits :sunglasses:](#reverting-commits-sunglasses)
 * [Short hands](#short-hands)
 * [GitHub CLI commands](#github--cli-commands)
-* [Reverting Commits :sunglasses:](#reverting-commits-sunglasses)
+* [Signing Commits](#signing-commits)
 
 
 ## Basic Commands :v:
@@ -337,4 +338,14 @@ Create a new release
 Create a shortcut for a gh command.
 ```
 
+**[⬆ Back to Index](#index-books)**
+
+## Signing Commits
+ These steps are to be followed when you want to sign your current commit.
+```sh
+     git commit --ammend --signoff
+      for signing the current commit
+     git push -f
+      force pushes the changes to the current branch.
+```
 **[⬆ Back to Index](#index-books)**
