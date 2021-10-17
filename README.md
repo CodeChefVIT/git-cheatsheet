@@ -6,7 +6,7 @@ This Repository is a guide to all the git commands you need to use in case any o
 * [Basic Commands :v:](#basic-commands-v)
 * [Branches :deciduous_tree:](#branches-deciduous_tree)
 * [Update forked Repository with original Repository :hourglass:](#update-forked-repository-with-original-repository--hourglass)
-* [Dev branch is X commits behind and Y commits ahead of master](#your-dev-branch-is-x-commits-behind-and-y-commits-ahead-of-master-fix)
+* [Dev branch is X commits behind and Y commits ahead of main](#your-dev-branch-is-x-commits-behind-and-y-commits-ahead-of-main-fix)
 * [Reverting Commits :sunglasses:](#reverting-commits-sunglasses)
 * [Short hands](#short-hands)
 * [GitHub CLI commands](#github--cli-commands)
@@ -38,7 +38,7 @@ git clone https://github.com/CodeChefVIT/git-cheatsheet.git
   
   git add .
   git commit -m <commit message>
-  git push origin master
+  git push origin main
    
    To add just one file or a set of files replace the . with your filename in first command
   
@@ -190,42 +190,42 @@ now, when you add the files it ignores node_modules directory in your project.
 
   Use the following if you want to rebase your branch:
   ```
-  git rebase upstream/master
+  git rebase upstream/main
   ```
 
   Or use the merge command if you want to merge instead:
   ```
-  git merge upstream/master
+  git merge upstream/main
   ```
   
-  Replace "master" with the name of the branch on the forked repository that you want to rebase or merge with.
+  Replace "main" with the name of the branch on the forked repository that you want to rebase or merge with.
 
 **[⬆ Back to Index](#index-books)**
 
-## Your dev branch is X commits behind and Y commits ahead of master fix 
+## Your dev branch is X commits behind and Y commits ahead of main fix 
 
 ```sh
-  git checkout master
+  git checkout main
 
-  git fetch origin master
+  git fetch origin main
  
   git checkout dev
 
-  git rebase origin/master
+  git rebase origin/main
 
-  git checkout master
+  git checkout main
 
   git merge --no-ff dev
   
   If you get this message  'Automatic merge failed; fix conflicts and then commit the result'
   
-  Check for merge conflicts in code and fix them (master branch should have required files now)
+  Check for merge conflicts in code and fix them (main branch should have required files now)
   
   For any such message deleted in  'dev and modified in HEAD. Version HEAD of requirements.txt left in tree' 
   
   File can either be deleted or modified or kept same
   
-  git pull origin master (if warning comes)
+  git pull origin main (if warning comes)
   
   add , commit , push 
 
